@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather Ap</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/weather-icons.min.css" />
+  <link rel="stylesheet" href="./css/weather-icons-wind.min.css" />
+  <link rel="stylesheet" href="./css/easy-autocomplete.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <img src="./img/back-ground2.jpg" alt="..." class="main__bg-image" />
+    <div class="wa-container">
+      <img class="wa-container__bg-image" src="./img/back-ground1.jpg" loading="lazy" alt="" />
+
+      <div class="wa-backdrower">
+        <span id="close-backdrower">&times;</span>
+
+        <div class="content">
+
+          <div class="content__main">
+
+            <div class="content__title">
+
+              <span class="content__title--name">
+                Monday
+              </span>
+
+
+            </div>
+
+            <div class="content__icon">
+              <i class="wi wi-day-sunny"></i>
+            </div>
+
+            <div class="content__description">
+              <div class="content__description--text">Clear Sky</div>
+            </div>
+
+            <div class="content__value">
+              <h3 class="content__value--temp"><span>33</span><i class="wi wi-celsius"></i></h3>
+            </div>
+
+            <div class="content__values">
+              <span class="content__values--min">Min <span>20</span><i class="wi wi-celsius"></i></span>
+              <span class="content__values--max">Max <span>33</span><i class="wi wi-celsius"></i></span>
+            </div>
+          </div>
+
+          <ul class="content__list">
+
+            <li class="content__list--presure">
+              <label for="">Presure</label>
+              <span>1023</span>mbar
+            </li>
+
+            <li class="content__list--humidity">
+              <label for="">Humidity</label>
+              <span>79</span>%
+            </li>
+
+            <li class="content__list--clouds">
+              <label for="">Clouds</label>
+              <span>8</span>%
+            </li>
+
+            <li class="content__list--wind">
+              <label for="">Wind</label>
+              <span>4,7</span>m/s
+            </li>
+
+          </ul>
+
+
+        </div>
+
+      </div>
+
+      <div class="wa-sections">
+        <div class="wa-sections__wa-top">
+          <div class="row">
+            <div class="col-6">
+              <div class="left_info">
+                <h1 class="left_info__current-time">12:32</h1>
+                <span class="left_info__current-date">Monday, 3 February 2019</span>
+
+                <ul class="left_info__timeline">
+                  <li><span class="left_info__timeline__time">9:00h</span><span class="left_info__timeline__text">Sunny
+                      Day</span></li>
+
+                  <li><span class="left_info__timeline__time">12:00h</span><span class="left_info__timeline__text">Sunny
+                      Day</span></li>
+
+                  <li><span class="left_info__timeline__time">15:00h</span><span class="left_info__timeline__text">Sunny
+                      Day</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="right_info">
+                <h1 class="right_info__city-title">Nis</h1>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="search">
+            <input type="text" id="search" placeholder="Search City">
+
+          </div>
+
+
+
+
+
+
+        </div>
+        <div class="wa-sections__wa-bottom">
+          <div class="today">
+
+            <div class="today__item">
+
+              <div class="today__item__icon">
+                <i id="current-weather-icon" class="wi wi-day-sunny"></i>
+              </div>
+
+              <div class="content">
+
+                <div class="content__title">
+                  <span class="content__title--name">Today</span>
+                </div>
+
+                <div class="content__value">
+                  <h3 class="content__value--temp"><span>33</span>
+                    <div class="wi wi-celsius"></div>
+                  </h3>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="daily">
+            <div id="1" class="daily_item">
+              <div class="daily_item__title">
+                <span class="daily_item__title--name">Monday</span>
+              </div>
+
+              <div class="daily_item__icon">
+                <i class="wi wi-day-sunny"></i>
+              </div>
+
+              <div class="daily_item__value">
+                <h3 class="daily_item__value--temp"><span>30</span><i class="wi wi-celsius"></i></h3>
+              </div>
+            </div>
+            <div id="2" class="daily_item">
+              <div class="daily_item__title">
+                <span class="daily_item__title--name">Tuesday</span>
+              </div>
+
+              <div class="daily_item__icon">
+                <i class="wi wi-day-sunny"></i>
+              </div>
+
+              <div class="daily_item__value">
+                <h3 class="daily_item__value--temp"><span>30</span><i class="wi wi-celsius"></i></h3>
+              </div>
+            </div>
+            <div id="3" class="daily_item">
+              <div class="daily_item__title">
+                <span class="daily_item__title--name">Wednesday</span>
+              </div>
+
+              <div class="daily_item__icon">
+                <i class="wi wi-day-sunny"></i>
+              </div>
+
+              <div class="daily_item__value">
+                <h3 class="daily_item__value--temp"><span>30</span><i class="wi wi-celsius"></i></h3>
+              </div>
+            </div>
+            <div id="4" class="daily_item">
+              <div class="daily_item__title">
+                <span class="daily_item__title--name">Thursday</span>
+              </div>
+
+              <div class="daily_item__icon">
+                <i class="wi wi-day-sunny"></i>
+              </div>
+
+              <div class="daily_item__value">
+                <h3 class="daily_item__value--temp"><span>30</span><i class="wi wi-celsius"></i></h3>
+              </div>
+            </div>
+            <div id="5" class="daily_item">
+              <div class="daily_item__title">
+                <span class="daily_item__title--name">Friday</span>
+              </div>
+
+              <div class="daily_item__icon">
+                <i class="wi wi-day-sunny"></i>
+              </div>
+
+              <div class="daily_item__value">
+                <h3 class="daily_item__value--temp"><span>30</span><i class="wi wi-celsius"></i></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/jquery.easy-autocomplete.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

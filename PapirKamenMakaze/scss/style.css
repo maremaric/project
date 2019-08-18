@@ -1,0 +1,76 @@
+html .container .dashboard .board .user-name,
+body .container .dashboard .board .user-name, html .container .dashboard .board .comp-name,
+body .container .dashboard .board .comp-name {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600; }
+
+html .container .dashboard .board .user-name,
+body .container .dashboard .board .user-name, html .container .dashboard .board .comp-name,
+body .container .dashboard .board .comp-name {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  top: 17px;
+  background-color: #e74c3c; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif; }
+  html .container,
+  body .container {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #34495e; }
+    html .container .dashboard,
+    body .container .dashboard {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html .container .dashboard .board,
+      body .container .dashboard .board {
+        width: 150px;
+        height: 50px;
+        border: 2px solid #fff;
+        position: relative;
+        color: #fff; }
+        html .container .dashboard .board .score,
+        body .container .dashboard .board .score {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          color: #fff;
+          font-size: 1.5rem; }
+          html .container .dashboard .board .score .user_score:after,
+          body .container .dashboard .board .score .user_score:after {
+            content: ":";
+            padding: 0px 10px; }
+        html .container .dashboard .board .user-name,
+        body .container .dashboard .board .user-name {
+          left: -20px; }
+        html .container .dashboard .board .comp-name,
+        body .container .dashboard .board .comp-name {
+          right: -20px; }
+    html .container .result,
+    body .container .result {
+      display: block;
+      width: 100%; }
+    html .container .selection,
+    body .container .selection {
+      display: block;
+      width: 100%; }
+      html .container .selection .item .circle .img,
+      body .container .selection .item .circle .img {
+        width: 100px; }
+
+/*# sourceMappingURL=style.css.map */
