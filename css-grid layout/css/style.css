@@ -1,0 +1,74 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas: "nav nav nav nav"
+                        "sidebar1 main main sidebar2"
+                        "sidebar1 main main sidebar2"
+                        "footer footer footer footer";
+    grid-gap: 0.2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+}
+
+nav {
+    background: #a7ffeb;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+main {
+    background: #84ffff;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#sidebar1 {
+    background: #18ffff;
+    grid-area: sidebar1;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#sidebar2 {
+    background: #6fffd2;
+    grid-area: sidebar2;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+
+footer {
+    background: #1de9b6;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.9fr 1.4fr 0.9fr 0.3fr;
+        grid-template-areas: 
+            "nav"
+            "sidebar1"
+            "main"
+            "sidebar2"
+            "footer";
+    }
+}
