@@ -1,0 +1,160 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.section {
+    background-color: #ededed;
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section .item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px;
+}
+
+.section .item-inner{
+    border: 10px solid #ffffff;
+    box-shadow: 0 0 3px #999999;
+    position: relative;
+    background-color: #222222;
+}
+
+.section .item-inner .img-box {
+    position: relative;
+}
+
+.section .item-inner img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s linear;
+    z-index: 10;
+}
+
+.section .item-inner img.visibility-hidden {
+    position: relative;
+    visibility: hidden;
+}
+
+.section .item-inner img:nth-child(1){
+    -webkit-clip-path: inset(0 75% 0 0);
+    clip-path: inset(0 75% 0 0);
+    transition-delay: 0.3s;
+}
+
+.section .item-inner img:nth-child(2){
+    -webkit-clip-path: inset(0 50% 0 24%);
+    clip-path: inset(0 50% 0 24%);
+    transition-delay: 0.2s;
+}
+
+.section .item-inner img:nth-child(3){
+    -webkit-clip-path: inset(0 25% 0 49%);
+    clip-path: inset(0 25% 0 49%);
+    transition-delay: 0.1s;
+}
+
+.section .item-inner img:nth-child(4){
+    -webkit-clip-path: inset(0 0 0 74%);
+    clip-path: inset(0 0 0 74%);
+}
+
+.section .item-inner:hover img{
+    transform: translateX(20px) scale(0.6);
+    opacity: 0;
+}
+
+.section .info-box{
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.section .item-inner:hover .info-box{
+    opacity: 1;
+}
+
+.section .info-box h1 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 15px;
+}
+
+.section .info-box p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #eeeeee;
+    margin: 0 0 20px;
+}
+
+.section .info-box .social-links a{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 3px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.section .info-box .social-links a:hover {
+    transform: translateY(5px);
+}
+
+.section .info-box .social-links .fa {
+    line-height: 35px;
+    color: #222222;
+}
+
+/* responsive */
+@media(max-width: 991px) {
+    .section .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 575px) {
+    .section .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
