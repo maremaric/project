@@ -1,0 +1,299 @@
+@import "_variables.scss";
+@import "_extends";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__bg-image {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .wa-container {
+      width: 80%;
+      height: 600px;
+      background-color: gray;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+
+      .wa-backdrower {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        right: -300px;
+        top: 0;
+        background: #00b4db;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,
+            #0083b0,
+            #00b4db);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right,
+            #0083b0,
+            #00b4db);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 888;
+
+        #close-backdrower {
+          font-size: 4rem;
+          position: absolute;
+          top: -30px;
+          left: 10px;
+          cursor: pointer;
+          height: 0;
+        }
+
+        .content {
+          padding: 30px;
+          height: 100%;
+
+          .content__main {
+            text-align: center;
+
+            .content__title {
+              margin-bottom: 3vh;
+
+              .content__title--name {
+                font-size: 1rem;
+                @extend %dark-title-background;
+              }
+            }
+
+            .content__icon {
+              i {
+                font-size: 4rem;
+              }
+            }
+
+            .content__value {
+              .content__value--temp {
+                font-size: 3rem;
+              }
+            }
+
+            .content__values {
+              display: flex;
+              justify-content: space-between;
+              font-size: 1.3rem;
+            }
+          }
+
+          .content__list {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 30px;
+
+            li {
+              position: relative;
+              padding: 20px 0px;
+              font-weight: bold;
+              font-size: 1.4rem;
+
+              label {
+                position: absolute;
+                top: -10px;
+                left: 0px;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+
+      .wa-container__bg-image {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+
+      .wa-sections {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+
+        .wa-sections__wa-top {
+          height: 400px;
+          width: 100%;
+          position: relative;
+
+          .left_info {
+            padding: 20px 50px;
+
+            .left_info__current-time {
+              width: 100%;
+              font-size: 4.5rem;
+              margin: 0;
+            }
+
+            .left_info__current-date {
+              font-size: 1.2rem;
+            }
+
+            .left_info__timeline {
+              list-style: none;
+              padding-left: 0;
+
+              li {
+                margin: 15px 0px;
+                display: flex;
+
+                .left_info__timeline__time {
+                  @extend %dark-title-background;
+                  width: 50px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-right: 20px;
+                }
+              }
+            }
+          }
+
+          .right_info {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin-right: 60px;
+            margin-top: 7vh;
+
+            .right_info__city-title {}
+          }
+
+          .search {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+
+            #search {
+              background-color: transparent;
+              border: 0;
+              border-bottom: 3px solid #fff;
+              color: #fff;
+              padding: 2px 3px;
+              font-size: 1.3rem;
+              outline: none;
+              text-align: center;
+              max-width: 150px;
+
+              &:placeholder {
+                color: rgba(255, 255, 255, 0.5);
+              }
+            }
+          }
+        }
+
+        .wa-sections__wa-bottom {
+          background-color: $primary-color-50;
+          height: 200px;
+          width: 100%;
+          display: flex;
+
+          .today {
+            width: 200px;
+            height: 100%;
+
+            .today__item {
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              height: 100%;
+              cursor: pointer;
+              transition: .2s ease;
+
+              &:hover {
+                background-color: $primary-color;
+
+              }
+
+              .today__item__icon {
+                i {
+                  font-size: 4rem;
+                }
+              }
+
+              .content {
+                text-align: center;
+
+                .content__title {
+                  .content__title--name {
+                    @extend %dark-title-background;
+                  }
+                }
+
+                .content__value {
+                  font-size: 3rem;
+                }
+              }
+            }
+          }
+
+          .daily {
+            display: flex;
+            width: 100%;
+
+            .daily_item {
+              width: 20%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
+              transition: 0.2 ease;
+              cursor: pointer;
+
+              &:hover {
+                background-color: $primary-color;
+              }
+
+              .daily_item__title {
+                width: 100%;
+                text-align: center;
+
+                span {
+                  @extend %dark-title-background;
+                }
+              }
+
+              .daily_item__icon {
+                i {
+                  font-size: 4rem;
+                }
+              }
+
+              .daily_item__value {
+                text-align: center;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
