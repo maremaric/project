@@ -25,4 +25,3 @@ function forOrWhile(data) {
 
 forOrWhile(niz);
 
-
