@@ -8,12 +8,22 @@
 
 
 
+var niz = ["abc","1ab22x","5","5ga6","ayz",""];
+var noviNiz = [];
 
+for(let i = 0; i < niz.length; i++) {
 
+var niz1 = niz[i].replace(/\D/g, "");
 
+if(niz1) {
+  noviNiz.push(niz1);
+}
 
+var rezultat = noviNiz.map(Number);
 
+}
 
+console.log(rezultat);
 
 
 
