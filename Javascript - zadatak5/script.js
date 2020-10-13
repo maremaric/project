@@ -13,4 +13,45 @@
 // Izraz ne treba izracunavati, vec samo validirati u skladu sa zadatim pravilima, 
 // i obavezno, prolazeci kroz string karakter po karakter u petlji.
 
+var digits = ["0","1","2","3","4","5","6","7","8","9"];
+var signs = ["+","-","*","/"];
+var string = "4 * 12 * 3 + 35";
+
+
+  if(validate(string))
+      console.log("validan!")
+    else
+      console.log("nevalidan!");
+
+
+function validate(string){
+
+  var lastChar=string[0];
+
+  var char = "";
+
+  for(var i = 0; i < string.length; i++){
+
+      char = string[i];
+
+      if(char == " ")
+
+          continue;
+
+      if(!(digits.includes(char) || signs.includes(char)))
+
+          return false;
+
+      if(signs.includes(char) && !digits.includes(lastChar))
+
+          return false;
+
+      lastChar = char;
+
+console.log(lastChar);
+
+  }
+
+  return true;
+}
 
