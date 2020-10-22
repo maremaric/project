@@ -24,6 +24,11 @@ app.get('/user/:username', (request, response) => {
 
 app.use('/assets', express.static('assets/'));
 
+app.use((request, response) => {
+    response.status(404);
+    response.send('Page Not Found!');
+});
+
 app.listen(3030);
 
 
