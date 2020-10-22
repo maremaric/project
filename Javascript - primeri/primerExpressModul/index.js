@@ -22,6 +22,8 @@ app.get('/user/:username', (request, response) => {
     response.send('Dostavljam podatke za korisnika sa imenom: ' + username);
 });
 
+app.use('/assets', express.static('assets/'));
+
 app.listen(3030);
 
 
