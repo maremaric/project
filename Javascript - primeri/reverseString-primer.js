@@ -22,3 +22,20 @@ function rString(str) {
 console.log(rString('zdravo'));
 
 // -------------------------------------
+
+// Primer 3:
+
+function rvsString(str) {
+
+  let final = '';
+
+  for(let i = str.length - 1; i >= 0; i--) {
+      final += str[i]
+  }
+  return final;
+}
+
+
+console.log(rvsString('stringJeOkrenut ):'));
+
+// -------------------------------------
