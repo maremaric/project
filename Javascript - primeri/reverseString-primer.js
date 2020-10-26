@@ -13,3 +13,12 @@ function reverseString(str) {
   console.log(reverseString('hello'));
   
 // -------------------------------------------------
+
+// Primer 2:
+function rString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(rString('zdravo'));
+
+// -------------------------------------
