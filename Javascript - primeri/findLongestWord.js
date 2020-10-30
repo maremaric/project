@@ -17,3 +17,12 @@ console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 console.log('------------------------------------------------------');
 
 
+// Primer 2:
+
+function findLoWo(str) {
+    return str.split(" ").sort(function(a, b) {return b.length - a.length})[0];
+}
+
+console.log(findLoWo("The quick brown fox jumped over the lazy dog"));
+
+
