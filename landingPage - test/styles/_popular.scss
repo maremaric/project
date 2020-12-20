@@ -1,0 +1,105 @@
+
+// Popular
+.popular {
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+}
+
+.grid__cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    grid-gap: 40px;
+    margin-left: 60px;
+}
+
+.grid__card {
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.grid__img img{
+    width: 100%;
+    display:  block;
+    border-radius: 20px 20px 0 0;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details > h3 {
+    color: $primaryColor;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.details > p {
+    color: $primaryColor;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+#popularTitle {
+    color: $primaryColor;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: linear-gradient(to right, #094a6b, #6cceff);
+    color: #ffffff;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+}
+
+
+.grid__card:hover {
+    background-color: $primaryColor;
+    color: white;
+}
+
+.grid__card:hover h3 {
+    color: white;
+}
+
+.grid__card:hover p {
+    color: white;
+}
+
+// Responsive popular
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .grid__cards {
+        display: block;
+        margin: 0;
+    }
+    .btn {
+        margin-bottom: 10px;
+    }
+    .card1 {
+        margin-bottom: 20px;
+    }
+    .card2 {
+        margin-bottom: 20px;
+    }
+}

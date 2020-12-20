@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+@import "./variables";
+
+@import "./navigation";
+
+@import "./connect";
+
+@import "./adventure";
+
+@import "./popular";
+
+@import "./footer";
+

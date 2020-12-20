@@ -1,0 +1,101 @@
+// Adventure
+.adventure {
+    width: 100%;
+    margin: 50px auto;
+    clip-path: polygon(0 11%, 100% 0, 100% 86%, 0 100%);
+    background-image: url('../images/img-bg-adventure.jpg');
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.fade {
+    background: RGBA(0, 170, 255, 0.7);
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding-top: 100px;
+}
+
+#adventureTitle {
+    color: white;
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h2 {
+    color: $primaryColor;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.card {
+    width: 20%;
+    background: #ffffff;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 5%;
+}
+
+.card__body p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.card__header {
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.card .card__header img {
+    padding-top: 20px;
+}
+
+.card__body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px - 10px rgba(0, 0, 0, 0.25);
+}
+
+// Responsive adventure
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+        padding-top: 0px;
+    }
+    #adventureTitle {
+        margin: 0;
+    }
+    .adventure {
+        clip-path: none;
+    }
+}
