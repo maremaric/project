@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Zadatak - Marko Maric</title>
+</head>
+<body>
+    
+    <div class="table__container">
+        <h1 class="heading">Customers</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>LVL</th>
+                    <th>Full Name</th>
+                    <th>Type</th>
+                    <th>Member Since</th>
+                    <th>Status</th>
+                    <th>Last Order</th>
+                    <th>Smart Subscribe</th>
+                    <th>Next Order</th>
+                    <th># of Orders</th>
+                    <th>CLV</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        1
+                    </td>
+                    <td data-label="Full Name">
+                        Michael Smith
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        /
+                    </td>
+                    <td data-label="#of Orders">
+                        24
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        1
+                    </td>
+                    <td data-label="Full Name">
+                        Sandra Bullock
+                    </td>
+                    <td data-label="Type">
+                        Preferred
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/check_circle_outline-24px (1).svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="#of Orders">
+                        36
+                    </td>
+                    <td data-label="CLV">
+                        $15.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        2
+                    </td>
+                    <td data-label="Full Name">
+                        Jullian Fanning
+                    </td>
+                    <td data-label="Type">
+                        Preferred
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/check_circle_outline-24px (1).svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="#of Orders">
+                        23
+                    </td>
+                    <td data-label="CLV">
+                        $15.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        1
+                    </td>
+                    <td data-label="Full Name">
+                        Clovis Leiser
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        /
+                    </td>
+                    <td data-label="#of Orders">
+                        12
+                    </td>
+                    <td data-label="CLV">
+                        $15.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl pale">
+                        3
+                    </td>
+                    <td data-label="Full Name" class="pale">
+                        Anthony Chaplin
+                    </td>
+                    <td data-label="Type" class="pale">
+                        Retail
+                    </td>
+                    <td data-label="Member Since" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="inactive">Inactive</span>
+                    </td>
+                    <td data-label="Last Order" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe" class="pale">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order" class="pale">
+                        /
+                    </td>
+                    <td data-label="#of Orders" class="pale">
+                        15
+                    </td>
+                    <td data-label="CLV" class="pale">
+                        $15.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        3
+                    </td>
+                    <td data-label="Full Name">
+                        Alexis Archer
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/check_circle_outline-24px (1).svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="#of Orders">
+                        31
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        3
+                    </td>
+                    <td data-label="Full Name">
+                        Rachael Roeder
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        /
+                    </td>
+                    <td data-label="#of Orders">
+                        33
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl pale">
+                        2
+                    </td>
+                    <td data-label="Full Name" class="pale">
+                        Joshua Massman
+                    </td>
+                    <td data-label="Type" class="pale">
+                        Retail
+                    </td>
+                    <td data-label="Member Since" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="inactive">Inactive</span>
+                    </td>
+                    <td data-label="Last Order" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe" class="pale">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order" class="pale">
+                        /
+                    </td>
+                    <td data-label="#of Orders" class="pale">
+                        42
+                    </td>
+                    <td data-label="CLV" class="pale">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        2
+                    </td>
+                    <td data-label="Full Name">
+                        Dennis Smith
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/check_circle_outline-24px (1).svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="#of Orders">
+                        22
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        2
+                    </td>
+                    <td data-label="Full Name">
+                        Freddy Simmons
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        /
+                    </td>
+                    <td data-label="#of Orders">
+                        52
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl pale">
+                        2
+                    </td>
+                    <td data-label="Full Name" class="pale">
+                        Jessie Allen
+                    </td>
+                    <td data-label="Type" class="pale">
+                        Preffered
+                    </td>
+                    <td data-label="Member Since" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="inactive">Inactive</span>
+                    </td>
+                    <td data-label="Last Order" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe" class="pale">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order" class="pale">
+                        /
+                    </td>
+                    <td data-label="#of Orders" class="pale">
+                        15
+                    </td>
+                    <td data-label="CLV" class="pale">
+                        $15.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        3
+                    </td>
+                    <td data-label="Full Name">
+                        Patty McCormick
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/check_circle_outline-24px (1).svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="#of Orders">
+                        27
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl pale">
+                        3
+                    </td>
+                    <td data-label="Full Name" class="pale">
+                        Kirk Gomez
+                    </td>
+                    <td data-label="Type" class="pale">
+                        Preffered
+                    </td>
+                    <td data-label="Member Since" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="inactive">Inactive</span>
+                    </td>
+                    <td data-label="Last Order" class="pale">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe" class="pale">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order" class="pale">
+                        /
+                    </td>
+                    <td data-label="#of Orders" class="pale">
+                        39
+                    </td>
+                    <td data-label="CLV" class="pale">
+                        $15.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        3
+                    </td>
+                    <td data-label="Full Name">
+                        Lena Garrett
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/check_circle_outline-24px (1).svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="#of Orders">
+                        32
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        4
+                    </td>
+                    <td data-label="Full Name">
+                        Santiago Drake
+                    </td>
+                    <td data-label="Type">
+                        Retail
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        /
+                    </td>
+                    <td data-label="#of Orders">
+                        2
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+                <tr class="user">
+                    <td data-label="LVL" class="lvl">
+                        4
+                    </td>
+                    <td data-label="Full Name">
+                        Marilyn Fisher
+                    </td>
+                    <td data-label="Type">
+                        Preferred
+                    </td>
+                    <td data-label="Member Since">
+                        12/12/2019
+                    </td>
+                    <td data-label="Status">
+                        <span class="active">Active</span>
+                    </td>
+                    <td data-label="Last Order">
+                        12/12/2019
+                    </td>
+                    <td data-label="Smart Subscribe">
+                        <img src="./icons/highlight_off-24px.svg" />
+                    </td>
+                    <td data-label="Next Order">
+                        /
+                    </td>
+                    <td data-label="#of Orders">
+                        5
+                    </td>
+                    <td data-label="CLV">
+                        $10.00
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
